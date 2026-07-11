@@ -8,7 +8,7 @@ This package provides a simple, idiomatic way to fetch, search, and filter the o
 ## Installation
 
 ```bash
-go get github.com/yourusername/cisa
+go get github.com/dabumana/cisa-go
 ```
 
 Replace with your actual module path if publishing.
