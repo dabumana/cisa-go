@@ -1,4 +1,4 @@
-# CISA KEV - Go Client API
+# CISA KEV - Go Client
 
 A Go client for the CISA Known Exploited Vulnerabilities (KEV) Catalog, a feed of vulnerabilities that are known to be actively exploited in the wild.
 This package provides a simple, idiomatic way to fetch, search, and filter the official CISA JSON feed.
