@@ -16,7 +16,8 @@ before:
     - go generate ./...
 
 builds:
-  - main: ./...
+  - skip: true
+    main: ./...
     env:
       - CGO_ENABLED=0
     goos:
