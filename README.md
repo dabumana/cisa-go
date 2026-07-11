@@ -21,7 +21,7 @@ package main
 import (
     "fmt"
     "log"
-    "github.com/dabumana/cisa-go"
+    "cisakev"
 )
 
 func main() {
