@@ -79,7 +79,7 @@ client := cisa.NewClient(
   * ShortDescription - description
   * RequiredAction - e.g., "Apply updates"
   * DueDate - remediation deadline
-  * KnownRansomwareCampaignUse – boolean
+  * KnownRansomwareCampaignUse – apt campaign
   * Notes - additional notes
   * CWEs - list of CWE identifiers
 * Filter - struct for advanced search (see below).

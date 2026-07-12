@@ -56,7 +56,7 @@ type Vulnerability struct {
 	ShortDescription    string   `json:"shortDescription"`
 	RequiredAction      string   `json:"requiredAction"`
 	DueDate             string   `json:"dueDate"`
-	KnownRansomwareCampaignUse bool `json:"knownRansomwareCampaignUse"`
+	KnownRansomwareCampaignUse string `json:"knownRansomwareCampaignUse"`
 	Notes               string   `json:"notes"`
 	CWEs                []string `json:"cwes"`
 }
@@ -70,7 +70,7 @@ type Filter struct {
 	DateAddedTo             string
 	DueDateFrom             string
 	DueDateTo               string
-	KnownRansomwareCampaignUse *bool
+	KnownRansomwareCampaignUse string
 	HasCWE                  string
 	Search                  string
 }
@@ -168,7 +168,7 @@ func matchesFilter(v Vulnerability, f Filter) bool {
 	if f.DueDateTo != "" && v.DueDate > f.DueDateTo {
 		return false
 	}
-	if f.KnownRansomwareCampaignUse != nil && v.KnownRansomwareCampaignUse != *f.KnownRansomwareCampaignUse {
+	if f.KnownRansomwareCampaignUse != "" {
 		return false
 	}
 	if f.HasCWE != "" {
