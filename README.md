@@ -21,7 +21,7 @@ package main
 import (
     "fmt"
     "log"
-    "cisakev"
+    cisa "cisakev"
 )
 
 func main() {
