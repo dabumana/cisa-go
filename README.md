@@ -21,7 +21,7 @@ package main
 import (
     "fmt"
     "log"
-    cisa "cisakev"
+    cisa "github.com/dabumana/cisa-go"
 )
 
 func main() {
